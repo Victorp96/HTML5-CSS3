@@ -51,12 +51,45 @@ li:hover{
 li:active{
 	background: purple;
 }
-/*li:visited{
-	background: blue;
-}*/
+li a:visited{
+	background: green;
+}
 input:focus{
 	background: yellow;
 }
 input:checked{
 	display: none;
+}
+
+/*li:before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: orange;
+	position: absolute;
+	top: 5px;
+}*/
+
+/*Primer hijo*/
+ul li:first-child{
+	background: purple;
+}
+/*hijo especificando el orden*/
+ul li:nth-child(2){
+	background: purple;
+	padding: 10px;
+}
+
+/*Ultimo hijo*/
+ul li:last-child{
+	background: orange;
+}
+/*Afecta elementos pares(2n), impares (2n+1)*/
+ul li:nth-child(2n){
+	background: lightblue;
+}
+
+/*afecta a todos los elementos excepto not()*/
+ul li:not(.diferente){
+	background: blue;
 }
