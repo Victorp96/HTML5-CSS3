@@ -1,0 +1,62 @@
+/* .contenedor p{
+		Selector descendiente
+	}
+	
+	.contenedor > p{
+		selector hijo directo
+	}
+
+	.contenedor p + p{
+		selector hermano adyacente
+
+
+	.contenedor p ~ p{
+		selector hermano general
+	}*/
+.contenedor p ~ p{ 
+	color:red;
+}
+
+li{
+	display: inline-block;
+	margin: 5px;
+	background: blue;
+	padding: 5px;
+}
+li a{
+	text-decoration: none;
+	color: white;
+}
+
+/*Selector atributo presente*/
+a[class], a[target]{
+	color: black;
+}
+
+/*Selector atributo igual*/
+a[class=diferente]{
+	background: black;
+}
+/*Selector atributo contenido*/
+a[href*=".com"]{
+	background: yellow;
+}
+
+li:hover{
+	background: pink;
+}
+/*li:link{
+	background: orange;
+}*/
+li:active{
+	background: purple;
+}
+/*li:visited{
+	background: blue;
+}*/
+input:focus{
+	background: yellow;
+}
+input:checked{
+	display: none;
+}

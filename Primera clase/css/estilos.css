@@ -1,0 +1,127 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+header{
+	height: 80px;
+	background: #444444;
+/*	padding-top: 20px;
+	padding-left: 60px;
+	padding-bottom: 0;
+	padding-right: 10px;
+	padding: 20px 10px 0 60px;*/
+	padding: 20px; /*toma todos los lados. Arriba, derecha, abajo, izquierda*/
+}
+
+#banner{
+	height: 400px;
+	background: gray;
+}
+
+#banner h1{
+	margin: 0;
+	font-size: 70px;
+	color: white;
+	text-align: center;
+/*	padding-top: 130px;	*/
+	position: relative;
+	top: 70px;
+	left: 90px;
+
+	border-width: 5px; 
+	border-style: none;
+	/*
+	valores de border-style:
+	-dashed
+	-dotted
+	-double
+	-solid
+	-none
+	*/
+	border-color: yellow;	
+	border: 3px solid white;
+}
+
+figure{
+	width: 200px;
+	float: left;
+}
+
+nav{
+	float: right;
+	padding-top: 10px;
+}
+
+	nav li{
+			display: inline;
+	}
+		nav li a{
+			text-decoration: none;
+			color: white;
+			font-size: 25px;
+			background: #999999;
+			padding: 5px;
+			border-radius: 5px;
+		}
+
+header form{
+	position:relative;
+	top: 30px;
+	border: none;
+}
+
+form label{
+	color: white;
+}
+
+#buscador{
+ 	height:30px;
+ 	border: none;
+}
+
+span{
+	border: 2px solid white;
+}
+
+#F1{
+	border: 2px dashed black;
+	color: black;
+}
+
+#principal{
+	width: 70%;
+	background: orange;
+	float: left;
+}
+article{
+	width: 42%;
+	border: 1px solid gray;
+	float: left;
+	margin: 22px;
+	padding: 10px;
+/*	background: #b2b2b2;*/
+}
+
+article img{
+	width: 200px;
+	float: right;
+}
+aside{
+	width: 30%;
+	height: 800px;
+	background: #630a0a;
+	float: right;
+}
+footer{
+	height: 80px;
+	background: black;
+	text-align: center;
+	color: white;
+	clear: both;  /*PARA NO QUEDEN FLOTANDO LOS DEMAS ELEMENTOS*/
+}
+
+.input::placeholder{
+	text-align: center;
+	color: green;
+}
