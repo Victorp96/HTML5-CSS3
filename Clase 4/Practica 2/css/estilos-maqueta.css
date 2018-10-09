@@ -66,6 +66,12 @@ h1 + a{
 	text-transform: uppercase;
 	background: #FFD770;
 	padding: 15px;
+	border: 2px solid #FFD770;
+	transition: all 1s;
+}
+h1 + a:hover{
+	background: none;
+	color: white;
 }
 .servicios{
 	height: 400px;
